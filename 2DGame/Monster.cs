@@ -5,10 +5,20 @@ class Monster : GameObject
     {
         Shape = 'M';
     }
+
+    public Monster(int newX, int newY)
+    {
+        Shape = 'M';
+
+        x = newX;
+        y = newY;
+    }
+
     ~Monster()
     {
 
     }
+
     public override void Start()
     {
 
@@ -16,11 +26,12 @@ class Monster : GameObject
 
     public override void Update()
     {
+        
 
     }
 
     public override void Render()
     {
-
+        base.Render();
     }
 }

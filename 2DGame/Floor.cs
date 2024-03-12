@@ -5,10 +5,20 @@ class Floor : GameObject
     {
         Shape = ' ';
     }
+
+    public Floor(int newX, int newY)
+    {
+        Shape = ' ';
+
+        x = newX;
+        y = newY;
+    }
+
     ~Floor()
     {
 
     }
+
     public override void Start()
     {
 
@@ -21,6 +31,6 @@ class Floor : GameObject
 
     public override void Render()
     {
-
+        //base.Render();
     }
 }
